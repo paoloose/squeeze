@@ -1,0 +1,7 @@
+node_modules/
+# squeeze output and temp dirs
+*.squeezed/
+.squeeze-*/
+.ab-av1-*/
+.tmp.ab-av1-*
+.DS_Store

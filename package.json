@@ -1,0 +1,21 @@
+{
+  "name": "squeeze",
+  "version": "0.1.0",
+  "description": "Recursively shrink images (caesiumclt) and videos (ab-av1) without visible quality loss",
+  "type": "module",
+  "bin": {
+    "squeeze": "./src/cli.ts"
+  },
+  "scripts": {
+    "start": "bun run src/cli.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "commander": "^15.1.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.4",
+    "typescript": "^7.0.2"
+  }
+}
