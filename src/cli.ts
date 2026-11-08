@@ -275,7 +275,7 @@ async function main() {
 
     const command = e.kind === "image"
       ? caesiumCommand(o, e.path, "<tmp>")
-      : abav1Command(o, metric, e.path, "<tmp>/out" + target.slice(target.lastIndexOf(".")), "<tmp>");
+      : abav1Command(o, metric, { input: e.path, output: "<tmp>/out" + target.slice(target.lastIndexOf(".")), tempDir: "<tmp>" });
     if (o.dryRun) return finish({ ...base, status: "planned", command });
 
     try {
